@@ -17,8 +17,8 @@ N5110 lcd(PC_7, PA_9, PB_10, PB_5, PB_3, PA_10);
 
 int main(){
     joystick.init();
-    lcd.init();
-    lcd.setContrast(0.4);      //set contrast to 40%
+    lcd.init(LPH7366_1);        //initialise for LPH7366-1 LCD (Options are LPH7366_1 and LPH7366_6)
+    lcd.setContrast(0.55);      //set contrast to 55%
     lcd.setBrightness(0.5);     //set brightness to 50% (utilises the PWM)
     
     while (1) {
